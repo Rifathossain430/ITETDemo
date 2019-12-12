@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mixcloth"
+        tools:context=".LoginActivity">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Institution of Textile Engineers and Technologists"
+            android:textSize="20sp"
+            android:id="@+id/titleName"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/color_white"
+            android:textAlignment="center"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="360dp"
+            android:layout_height="370dp"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="22dp"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardBackgroundColor="#8CFFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.libizo.CustomEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/loginEmailET"
+                    android:hint="Email or Phone Number"
+                    android:inputType="textEmailAddress"
+                    app:libIZO_clearIconTint="@color/color_blue"
+                    app:libIZO_setBorderColor="@color/color_white"
+                    app:libIZO_setBorderView="true"
+                    app:libIZO_setClearIconVisible="true"
+                    app:libIZO_setBackgroundColor="@color/color_white"
+                    android:backgroundTint="@color/color_white"
+                    app:libIZO_setCornerRadius="5dp"
+                    app:libIZO_setStrokeWidth="2dp"/>
+
+                <com.libizo.CustomEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/loginPasswordET"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    app:libIZO_clearIconTint="@color/color_blue"
+                    app:libIZO_setBorderColor="@color/color_white"
+                    app:libIZO_setBorderView="true"
+                    app:libIZO_setClearIconVisible="true"
+                    app:libIZO_setBackgroundColor="@color/color_white"
+                    android:backgroundTint="@color/color_white"
+                    app:libIZO_setCornerRadius="5dp"
+                    app:libIZO_setStrokeWidth="2dp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/custom_button_design"
+                    android:textSize="14sp"
+                    android:textAllCaps="false"
+                    android:id="@+id/logInBTN"
+                    android:text="Log in"
+                    android:onClick="mainactivity"
+                    android:textColor="@color/button_text_grey"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="65dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardBackgroundColor="#D9FFFFFF"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:id="@+id/googleSignUpClick">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:id="@+id/googleIV"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="8dp"
+                                android:src="@drawable/google"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/googleIV"
+                                android:text="Sign in with Google"
+                                android:layout_centerVertical="true"
+                                android:textSize="15sp"/>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        app:cardBackgroundColor="#D9FFFFFF"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:id="@+id/facebookLoginClick"
+                            >
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:id="@+id/phoneIV"
+                                android:layout_margin="8dp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/facebook"
+                                android:tint="@color/color_blue"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/phoneIV"
+                                android:text="Sign in with Facebook"
+                                android:layout_centerVertical="true"
+                                android:textSize="15sp"/>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:padding="4dp"
+            android:layout_marginBottom="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dont Have Account? "
+                android:textColor="@color/color_white"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/signUpTV"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_white"
+                android:text="@string/sign_up"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</layout>

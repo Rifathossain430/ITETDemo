@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".PhoneVerificationActivity">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginBottom="15dp"
+            android:background="#FFC600">
+
+            <ImageView
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:onClick="back"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_back_black_24dp"></ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:layout_toRightOf="@+id/fab"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/calllogo"
+                    android:tint="@color/color_white"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  Phone Registration"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_white"
+                    android:textSize="18dp"
+                    android:textStyle="bold"></TextView>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Name"
+                android:textAlignment="center"
+                android:textSize="18dp"></TextView>
+
+            <com.libizo.CustomEditText
+                android:id="@+id/nameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/color_white"
+                android:hint="Your Full Name"
+                android:inputType="text"
+                app:libIZO_clearIconTint="@color/color_blue"
+                app:libIZO_setBackgroundColor="@color/color_white"
+                app:libIZO_setBorderColor="@color/color_white"
+                app:libIZO_setBorderView="true"
+                app:libIZO_setClearIconVisible="true"
+                app:libIZO_setCornerRadius="5dp"
+                app:libIZO_setStrokeWidth="2dp" />
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinnerCountries"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+            <com.libizo.CustomEditText
+                android:id="@+id/loginphoneET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/color_white"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                app:libIZO_clearIconTint="@color/color_blue"
+                app:libIZO_setBackgroundColor="@color/color_white"
+                app:libIZO_setBorderColor="@color/color_white"
+                app:libIZO_setBorderView="true"
+                app:libIZO_setClearIconVisible="true"
+                app:libIZO_setCornerRadius="5dp"
+                app:libIZO_setStrokeWidth="2dp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Institute"
+                android:textAlignment="center"
+                android:textSize="18dp"></TextView>
+
+            <com.libizo.CustomEditText
+                android:id="@+id/instituteET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/color_white"
+                android:hint="Your Institute Name"
+                android:inputType="text"
+                app:libIZO_clearIconTint="@color/color_blue"
+                app:libIZO_setBackgroundColor="@color/color_white"
+                app:libIZO_setBorderColor="@color/color_white"
+                app:libIZO_setBorderView="true"
+                app:libIZO_setClearIconVisible="true"
+                app:libIZO_setCornerRadius="5dp"
+                app:libIZO_setStrokeWidth="2dp" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_marginTop="20dp"
+            android:text="Next"
+            android:textColor="@color/grey"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/buttonshape"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:padding="4dp"
+            android:background="#DDDBDB"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already Have Account? "
+                android:textColor="@color/color_white"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_white"
+                android:text="@string/log_in"
+                android:onClick="loginactivity"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

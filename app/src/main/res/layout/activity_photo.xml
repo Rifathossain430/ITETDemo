@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhotoActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_marginLeft="5dp"
+                app:cardBackgroundColor="@color/color_white"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="2dp"
+                app:cardCornerRadius="7dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+
+                    android:src="@drawable/pexel"
+                    android:scaleType="fitXY"></ImageView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/color_white"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="2dp"
+
+                app:cardCornerRadius="7dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/pexelone"
+                    android:scaleType="fitXY"
+                    ></ImageView>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_marginLeft="5dp"
+                app:cardBackgroundColor="@color/color_white"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="2dp"
+                app:cardCornerRadius="7dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/pexelthree"
+                    android:scaleType="fitXY"></ImageView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/color_white"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="2dp"
+
+                app:cardCornerRadius="7dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/pexelstwo"
+                    android:scaleType="fitXY"
+                    ></ImageView>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_marginLeft="5dp"
+                app:cardBackgroundColor="@color/color_white"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="2dp"
+                app:cardCornerRadius="7dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/sewingghola"
+                    android:scaleType="fitXY"></ImageView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/color_white"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="2dp"
+
+                app:cardCornerRadius="7dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/pexelone"
+                    android:scaleType="fitXY"
+                    ></ImageView>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_marginLeft="5dp"
+                app:cardBackgroundColor="@color/color_white"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="2dp"
+                app:cardCornerRadius="7dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/yarnphoto"
+                    android:scaleType="fitXY"></ImageView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/color_white"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="2dp"
+
+                app:cardCornerRadius="7dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+
+                    android:src="@drawable/windowcloth"
+                    android:scaleType="fitXY"
+                    ></ImageView>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_marginLeft="5dp"
+                app:cardBackgroundColor="@color/color_white"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="2dp"
+                app:cardCornerRadius="7dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/windowcloth"
+                    android:scaleType="fitXY"></ImageView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/color_white"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="2dp"
+
+                app:cardCornerRadius="7dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/pexelstwo"
+                    android:scaleType="fitXY"
+                    ></ImageView>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
